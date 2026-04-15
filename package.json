@@ -1,0 +1,31 @@
+{
+  "name": "elib",
+  "version": "1.0.0",
+  "description": "This is a ebook api project",
+  "keywords": [
+    "rest",
+    "api",
+    "express"
+  ],
+  "homepage": "https://github.com/anmol-raj/elib#readme",
+  "bugs": {
+    "url": "https://github.com/anmol-raj/elib/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anmol-raj/elib.git"
+  },
+  "license": "ISC",
+  "author": "Anmol Raj",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
