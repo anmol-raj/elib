@@ -1,21 +1,14 @@
-import express, {
-  type NextFunction,
-  type Request,
-  type Response,
-} from "express";
-import type { HttpError } from "http-errors";
+import express from "express";
+import globalErrorHandler from "./middlewares/globalErrorHandler.ts";
 
 const app = express();
 
 // Routes
-
 app.get("/", (req, res, next) => {
   res.json({ message: "Welcome to elib apis" });
 });
 
 // Global error handler
-app.use((err: HttpError, req: Request, res: Response, next: NextFunction) => {
-  const statusCode = err.statusCode || 500;
-});
+app.use(globalErrorHandler);
 
 export default app;
