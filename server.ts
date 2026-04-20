@@ -4,7 +4,6 @@ import connectDB from "./src/config/db.ts";
 
 const startServer = async () => {
   // Connect database
-
   await connectDB();
 
   const port = config.port || 3000;
